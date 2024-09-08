@@ -10,7 +10,13 @@ import { addProductCart, completePurchase } from '../../task/ToSelectProduct.js'
 import ProductPage from '../../pages/productPage/ProductPage.js'
 import {fillCardData} from '../../task/ToFillCardData.js'
 
+// Simulate an iPhone X before each test
+ /*
+beforeEach(() => {
 
+  cy.viewport('iphone-x');
+  goToPage();
+});*/
 
 Given('I am logged in the page', () => {
   goToPage();
